@@ -1,0 +1,54 @@
+:root{
+	--main-font: 'Droid Arabic Kufi';
+}
+
+body{
+    font-family: var(--main-font);
+}
+.color{
+	background-color: #000000;
+}
+.color2{
+	background-color: #B61C1C;
+}
+
+.main-slider{
+	height: 80vh;
+}
+
+.nav{
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 24px;
+}
+
+.main-slider .carousel{
+	
+}
+.main-slider .carousel-inner{
+	
+}
+
+.main-slider .carousel-inner img{
+	
+}
+.section-title h4, .section-title h5{
+	color: #ffffff;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+}
+
+.section-title h4:after, .section-title h5:after {
+    position: absolute;
+    left: 0;
+    top: -6px;
+    height: 32px;
+    width: 4px;
+    background: #B61C1C;
+    content: "";
+}
+.main-slider .carousel-indicators .active{
+	background-color: #B61C1C;
+}

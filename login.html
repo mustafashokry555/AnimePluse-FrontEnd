@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	
+    <link rel="stylesheet" href="./css/login.css">
+
+	    <!-- font  awesome -->
+		<link rel="stylesheet" href="./css/font-awesome.min.css">	
+
+    <style type="text/css"></style>
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>إنشاء حساب</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="social"><i class="fa fa-google"></i></a>
+			</div>
+			<span>أو استخدم بريدك الإلكتروني للتسجيل</span>
+			<input type="text" placeholder="الإسم" />
+			<input type="email" placeholder="إيميل" />
+			<input type="password" placeholder="كلمة المرور" />
+			<button>تسجيل</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>تسجيل دخول</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="social"><i class="fa fa-google"></i></a>
+			</div>
+			<span>أو إستخدم حسابك</span>
+			<input type="email" placeholder="إيميل" />
+			<input type="password" placeholder=" كلمة المرور" />
+			<a href="#">نسيت كلمة المرور?</a>
+			<button>دخول</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>مرحباَ بعودتك!</h1>
+				<p>
+					للبقاء على اتصال معنا ، يرجى تسجيل الدخول باستخدام معلوماتك الشخصية
+				</p>
+				<button class="ghost" id="signIn">تسجيل دخول</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>مرحباً, صديقي!</h1>
+				<p>
+					أدخل بياناتك الشخصية
+				</p>
+				<button class="ghost" id="signUp">إنشاء حساب</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/login.js"></script>
+</body>
+</html>

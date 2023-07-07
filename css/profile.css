@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Srisakdi:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    --primary-color: #B41D1E;
+    --text-color-white: #FFF;
+    --text-color-dark: #000;
+    --text-color-grey: #a0afbb;
+    --background-color-grey: #f0f0f0;
+    --background-color-white: #FFF;
+    --background-color-dark: #333;
+    --background-color-black: #000;
+    --transition-duration: 0.3s;
+    --default-trans: all 0.3s ease;
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color-black);
+    color: var(--text-color-white);
+    text-align: center;
+}
+
+
+main .jumbo {
+    width: 100%;
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .icons {
+    display: flex;
+    justify-content: center;
+}
+
+main .icons .big-icon img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    margin-top: -120px;
+}
+
+main .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .details h3 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+main .details .job-title {
+    background-color: var(--background-color-dark);
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+main .bio {
+    margin-bottom: 50px;
+}
+
+main .bio .social {
+    display: flex;
+    justify-content: center;
+}
+
+main .bio .social div {
+    margin: 0 25px;
+    font-size: 30px;
+}
+
+main .bio .social div p{
+    margin-bottom: 0;
+}
+
+main .bio .buttons div button{
+    background-color: var(--background-color-dark);
+    border: 0;
+    font-size: 20px;
+    border-radius: 25px;
+    margin: 5px 15px;
+    color: var(--text-color-white);
+    width: 300px;
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    main .jumbo {
+        height: 200px !important;
+    }
+
+    main .icons {
+        justify-content: center !important;
+    }
+}

@@ -1,0 +1,263 @@
+:root{
+    --wite:#fff;
+    --red:#CA1919;
+}
+* {box-sizing: border-box}
+body{
+    direction: rtl;
+    background-color: #000000;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.navbar .w-22{
+    width: 22% !important;
+}
+
+.navbar ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.collapse{
+    width: 100%;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a
+{
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--wite);
+    display: block;
+}
+
+.carousel{
+    margin-top: 5%;
+}
+
+.border-right span{
+    width: 0%;
+    height: 2px;    
+    background-color: var(--red);
+    top: auto;
+    bottom: -3px;
+}
+
+.buttons-effect span:first-child{
+    position: relative;
+    right: 0;
+    bottom: -10px;
+    display: block;
+    z-index: 1;
+}
+
+
+.div-1{
+    text-align: center;
+    color: var(--wite);
+    margin: 11% 0;
+}
+
+.div-1 i{
+    padding: 6px;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+}
+
+.div-1 p{
+    color: #ddd;
+font-size: 12px;
+}
+
+
+.div-2{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+.div-2 .sub-info{
+    text-align: right;
+    padding: 0 50px;
+}
+
+
+.div-2 .card-header,.div-2 .card-title{
+    text-align: center;
+}
+
+.div-2 .card , .div-3 .card{
+    overflow: hidden;
+    border: none;
+    box-shadow: rgba(255, 254, 254, 0.925) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 10%;
+}
+
+
+.div-3 .card-head , .div-2 .card-head {
+    background-color: var(--red);
+    color: var(--wite);
+    font-size: 12px;
+    padding: 3px 25px;
+    position: absolute;
+    left: -22px;
+    top: 12px;
+    transform: rotate(-39deg);
+}
+.div-3 .card-header ,.div-2 .card-header{
+    background: #1f1f1f;
+    color: var(--wite);
+    padding: 1.2rem 1rem;
+}
+
+.div-3 .sub-info ,.div-2 .sub-info{
+    list-style: none;
+    
+}
+
+.div-3 .sub-info li ,.div-2 .sub-info li{
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+
+.div-3{
+    text-align: center;
+}
+
+/* .div-3 .card{
+    max-width: 80%;
+    margin: auto;
+    
+} */
+
+.div-3 .dollar1{
+    font-size: 16px;
+    position: relative;
+    bottom: 27px;
+
+}
+.div-3 .dollar-num{
+    font-size: 55px;
+}
+.div-3 .dollar2{
+    font-size: 12px;
+    position: relative;
+    bottom: 28px;
+}
+
+.div-3 .dollar3{
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+/* display: inline-block; */
+}
+
+
+.div-3 .btn ,.div-2 .btn{
+    background-color: #1f1f1f;
+    padding: 5px 25px;
+    border: none;
+}
+
+.div-3 .btn:focus ,.div-2 .btn:focus{
+    box-shadow: none;
+}
+
+.card{
+    border-radius: 4px;
+    box-shadow: rgba(255, 254, 254, 0.925) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+     box-shadow: rgba(255, 254, 254, 0.925) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
