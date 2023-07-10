@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 $(".popular-slider").owlCarousel({
     loop: false,
     margin: 10,
@@ -174,4 +176,25 @@ searchInput.addEventListener("keyup", function () {
     if (input === "") {
         suggestionsPanel.innerHTML = "";
     }
+
+    
+});
+
+$('.border-right').hover(function() {
+    $(this).find('span').eq(0).animate({
+
+        width: '100%'
+
+    }, 300);
+
+    }, function() {
+
+    $(this).find('span').eq(0).animate({
+
+        width: 0
+
+    }, 300)
+
+    });
+
 });

@@ -32,7 +32,7 @@ body {
     --transition-duration: 0.3s;
     --default-trans: all 0.3s ease;
 
-    font-family: 'Open Sans', sans-serif;
+    --main-font: 'Droid Arabic Kufi';
     background-color: var(--background-color-black);
     color: var(--text-color-white);
     text-align: center;

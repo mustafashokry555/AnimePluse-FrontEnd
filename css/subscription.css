@@ -13,56 +13,6 @@ body{
     font-size: 55px;
 }
 
-.navbar .w-22{
-    width: 22% !important;
-}
-
-.navbar ul
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.collapse{
-    width: 100%;
-}
-
-.navbar ul li
-{
-    list-style: none;
-    padding: 10px 20px;
-}
-
-.navbar ul li a
-{
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: var(--wite);
-    display: block;
-}
-
-.carousel{
-    margin-top: 5%;
-}
-
-.border-right span{
-    width: 0%;
-    height: 2px;    
-    background-color: var(--red);
-    top: auto;
-    bottom: -3px;
-}
-
-.buttons-effect span:first-child{
-    position: relative;
-    right: 0;
-    bottom: -10px;
-    display: block;
-    z-index: 1;
-}
-
 
 .div-1{
     text-align: center;

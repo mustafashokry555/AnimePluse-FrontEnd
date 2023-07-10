@@ -6,64 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>subscription</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/subscription.css">
 
 
     <!-- font  awesome -->
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="w-22"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li><a class="buttons-effect border-right" href="#">
-            سجل الاَن
-            <span></span>
-          </a>
-          </li>
-
-          <li><a class="buttons-effect border-right" href="#">
-            دخول
-            <span></span>
-          </a>
-        </li>
-
-        </ul>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
+  <header class="header">
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="./img/logo.png" alt="" srcset="">
+            </a>
+            <div class="mean-toggle"></div>
+            <nav>
+              <ul>
+                  <li><a class="buttons-effect border-right" href="index.html">
+                    الرئيسية
+                    <span></span>
+                </a></li>
+                  <li><a class="buttons-effect border-right" href="login.html">
+                    سجل الاَن
+                    <span></span>
+                  </a></li>
+                  <li><a class="buttons-effect border-right" href="login.html">
+                    دخول
+                    <span></span>
+                  </a></li>
+              </ul>
+            </nav>
+            <div class="clear"></div>
     </div>
-  </nav>
-
-  <header>
-    <div class="slideshow-container">
-
-      <div class="mySlides">
-        <h4>تعرف علي المزيد...</h4>
-        <br>
-        <button class="btn btn-outline-dark">تعرف علي الخصم</button>
-      </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      
-      </div>
-      
-      <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-      
-      
 </header>
+
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <h4>تعرف علي المزيد...</h4>
+    <br>
+    <button class="btn btn-outline-dark">تعرف علي الخصم</button>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
 
   <div class="container">
       <section class="div-1"> 
@@ -229,8 +223,9 @@
   </section>
   </div>
     
-      <script src="./js/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+      <script src="./js/jQuery v3.6.0.js"></script>
+    <script src="./js/subscription.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

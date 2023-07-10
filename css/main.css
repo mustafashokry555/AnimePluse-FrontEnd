@@ -32,7 +32,8 @@ body {
     --transition-duration: 0.3s;
     --default-trans: all 0.3s ease;
 
-    font-family: 'Open Sans', sans-serif;
+    --main-font: 'Droid Arabic Kufi';
+    background: var(--background-color-black);
 }
 
 body.light {
@@ -491,90 +492,8 @@ footer p i {
     background-color: var(--primary-color);
 }
 
-/*Nav*/
-nav {
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
-    background-color: var(--background-color-dark);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-}
-
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#desktop-nav .nav-left {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-brand a {
-    font-family: 'Srisakdi', cursive;
-    font-weight: bolder;
-    font-size: 2.4em;
-}
-
-.nav-left a {
-    color: var(--text-color-white);
-}
-
-.nav-left ul {
-    padding-top: 5px;
-    margin-left: 30px;
-}
-
-.nav-left ul li a {
-    color: var(--text-color-white);
-    transition: var(--transition-duration);
-}
-
-.nav-left ul li a:hover {
-    color: var(--primary-color);
-}
-
-.nav-right ul {
-    display: flex;
-    align-items: center;
-}
-
-.nav-right ul li a {
-    color: var(--text-color-white);
-    transition: var(--transition-duration);
-}
-
-.nav-right ul li a i {
-    font-size: 1.5em;
-}
-
-.nav-right ul li a:hover {
-    color: var(--primary-color);
-}
-
-.nav-right ul li {
-    margin-left: 30px;
-}
-
-.nav-right ul li:nth-child(2) a {
-    padding: 10px 20px;
-    border: 1px solid var(--primary-color);
-    border-radius: 50px;
-    color: var(--primary-color);
-
-}
-
-.nav-right ul li:nth-child(2) a:hover {
-    color: var(--text-color-white);
-    background-color: var(--primary-color);
-}
-
 /*Header*/
-header {
+.main-slider {
     height: 80vh;
     width: 100%;
     /* background-image: url(https://i.imgur.com/ZTYsGPG.jpg); */
@@ -587,7 +506,7 @@ header {
     align-items: center;
 }
 
-header::after {
+.main-slider::after {
     content: "";
     position: absolute;
     top: 0;
@@ -597,7 +516,7 @@ header::after {
     height: 100%;
 }
 
-header .carousel-indicators .active{
+.main-slider .carousel-indicators .active{
 	background-color: #B61C1C;
 }
 .header-content {
@@ -615,6 +534,8 @@ header .carousel-indicators .active{
     color: var(--text-color-grey);
     font-size: 1.5em;
 }
+
+
 
 /*Search Box*/
 .search-form-container {
@@ -704,4 +625,94 @@ header .carousel-indicators .active{
     .movie-item .movie-poster-box img {
         height: 450px;
     }
+}
+
+
+.premium-account{
+    height: 150px;
+    margin: 5% 0;
+    background-color: #000;
+}
+.premium-account img{
+    height: 150px;
+    width: 100%;
+    display: block;
+}
+
+
+/* fav style */
+.fav{
+    margin-top: 20px;
+}
+.fav #pills-tab .nav-item .nav-link{
+    color: var(--text-color-white);
+    width: 250px;
+    background-color: var(--background-color-black);
+    border-radius: 0;
+    border-bottom: 5px solid var(--background-color-black);
+}
+.fav #pills-tab .nav-item .nav-link.active{
+    border-bottom: 5px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.fav #pills-tab .nav-item .nav-link.active:hover{
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.fav #pills-tab .nav-item .nav-link:hover{
+    background-color: var(--background-color-dark);
+    border-bottom: 5px solid var(--background-color-dark);
+}
+
+.fav #pills-tabContent .tab-pane nav .nav-tabs{
+    border: 0;
+}
+.fav #pills-tabContent .tab-pane nav .nav-tabs .nav-link{
+    color: var(--text-color-white);
+    background-color: var(--background-color-black);
+    border-radius: 25px;
+    padding: 3px 10px;
+    border: 0;
+    margin: 0 3px;
+}
+.fav #pills-tabContent .tab-pane nav .nav-tabs .nav-link.active{
+    background-color: var(--primary-color);
+    border: 0;
+}
+.fav #pills-tabContent .tab-pane nav .nav-tabs .nav-link:hover{
+    background-color: var(--background-color-dark);
+    border: 0;
+}
+.fav #pills-tabContent .tab-pane nav .nav-tabs .nav-link.active:hover{
+    background-color: var(--primary-color);
+    border: 0;
+}
+
+.fav #pills-tabContent #nav-tabContent .tab-pane .card {
+    background-color: var(--background-color-black);
+    color: var(--text-color-white);
+    overflow: hidden;
+    width: calc(25% - 10px) !important;
+    margin: 0 5px 20px;
+    border: 0;
+}
+.fav #pills-tabContent #nav-tabContent .tab-pane .card:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.fav #pills-tabContent #nav-tabContent .tab-pane .card:hover img{
+    transform: scale(1.1);
+}
+.fav #pills-tabContent #nav-tabContent .tab-pane .card .card-body{
+    padding-top: 5px;  
+    padding-bottom: 5px;  
+}
+
+.fav #pills-tabContent #nav-tabContent .tab-pane .card .card-img{
+    height: 300px;
+    border-radius: .25rem;
+    overflow: hidden;
+}
+.fav #pills-tabContent #nav-tabContent .tab-pane .card img {
+    height: 100%;
 }
