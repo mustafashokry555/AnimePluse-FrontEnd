@@ -100,7 +100,7 @@ body{
 /* start comments */
 .comm-info{
     margin-top: 5%;
-    overflow: scroll;
+    overflow-y: auto;
     height: 500px;
 }
 
@@ -150,6 +150,7 @@ body{
 
 .content ul li{
     margin-bottom: 15px;
+    position: relative;
 }
 .content ul li span{
     font-size: 12px;
@@ -158,7 +159,8 @@ body{
 .content ul li::before{
     position: absolute;
     content: "";
-    right: 16px;
+    right: -16px;
+    top: 5px;
     background-color: var(--dark-yellow);
     width: 10px;
     height: 16px;
@@ -277,7 +279,7 @@ ul {
   #popular .movie-item{
     margin-bottom: 25px;
     height: 150px;
-    width: 40%;
+    box-sizing: border-box;
   }
 
   .movie-content{
@@ -438,7 +440,7 @@ ul {
 
 .slider .card{
   border-radius: 10px;
-  width: 200px;
+  width: 100%;
 }
 
 .card .img-cat{

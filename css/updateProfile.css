@@ -15,7 +15,8 @@ body {
     --background-color-black: #000;
     --transition-duration: 0.3s;
     --default-trans: all 0.3s ease;
-    
+    padding: 0;
+    margin: 0;
     color: var(--primary-color);
 }
 .overlay{
@@ -24,9 +25,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+
     height: 100%;
     width: 100%;
-    background: url('../img/fpkuP0kXVXIF9mBSry4jKJVpz8mDZCP7wc6eefKw.jpg');
+    background: url('../img/51107.jpg');
     background-size: cover;
     filter: blur(8px);
     z-index: -1000100;
@@ -138,9 +140,14 @@ form label {
     background: rgb(250,7,37);
     background:linear-gradient(to right, rgba(250,7,37,1), #6250e2);
     border: 0;
-    padding: 5px 50px;
-    font-size: 20px;
+    /* padding: 5px 50px; */
+    font-size: 16px;
     border-radius: 50px;
+}
+
+.form-group .btn{
+    padding: 2px 50px;
+    font-size: 20px;
 }
 
 .btn:focus{

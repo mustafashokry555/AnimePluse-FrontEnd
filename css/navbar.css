@@ -178,11 +178,12 @@ nav.active {
 }
 
 .nav-link-info, .logo-img{
-    width: 50%;
+    /* width: 50%; */
 }
 
 .navbar-nav{
     justify-content: left;
+    flex-direction: initial;
 }
 
 .navbar .navbar-nav .nav-link{
@@ -194,10 +195,10 @@ nav.active {
     
 }
 
-.navbar .nav-item:hover{
+.navbar .nav-item:hover i{
     /* margin-left: 15px; */
     text-align: center;
-    background:  var(--primary-color);
+    color:  var(--primary-color);
     
 }
 
@@ -247,7 +248,7 @@ nav.active {
   @media screen and (max-width: 413px) {
 
     .nav-link-info, .logo-img, .navbar-nav{
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         
     }

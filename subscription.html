@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>subscription</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/sidebar.css">
-    <link rel="stylesheet" href="./css/subscription.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>subscription</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/subscription.css">
 
 
-    <!-- font  awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font  awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <!-- Start navbar -->
-    <nav class="navbar navbar-expand-lg navbarDark">
-      <div class="container">
+  <!-- Start navbar -->
+  <nav class="navbar navbar-expand-lg navbarDark">
+    <div class="container">
       <div class="row" style="width: 100%;">
-          <div class="col-md-6 col-sm-6 col-lg-6 logo-img">
-          <a class="navbar-brand" href="#">
-              <img src="./img/logo.png" alt="" srcset="">
+        <div class="col-11 text-md-center  logo-img">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt="" srcset="">
           </a>
-          </div>
-          <div class="col-md-6 col-sm-6 col-lg-6 nav-link-info">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">
-                      <i class="fa fa-heart"></i>
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link buttons-effect border-right" href="about-us.html">
-                      <i class="fa fa-cog"></i>
-                      </a>
-                      
-                  </li>
-              </ul>
-          </div>
+        </div>
+        <div class="col-1 nav-link-info">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="fav.html">
+                <i class="fa fa-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link buttons-effect border-right" href="index.html">
+                <i class="fa fa-cog"></i>
+              </a>
+
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
+    </div>
   </nav>
   <!-- End navbar -->
 
-<!-- start sidebar -->
+  <!-- start sidebar -->
   <section class="sidebar side-width">
-  <div class="blur-img">
-    <img src="./img/image_4.jpg" alt="" srcset="">
-  </div>
-    <div class="toggle-icon">
-      <i class="fa fa-navicon"></i>
-    </div>
+    <div class="side-content">
+      <div class="blur-img">
+        <img src="./img/image_4.jpg" alt="" srcset="">
+      </div>
+      <div class="toggle-icon">
+        <i class="fa fa-navicon"></i>
+      </div>
 
-    <div class="user">
-      <img class="" src="./img/user_profile.png" alt="">
-        <h6 class="name">Alkahir Abdelmoneim</h6>
-        <p class="email">test@gmail.com &nbsp;- <span>تم التحقق</span></p> 
+      <div class="user">
+        <a href="profile.html">
+          <img class="" src="./img/user_profile.png" alt="">
+        </a>
+        <a href="profile.html" style="all: unset; cursor: pointer;">
+          <h6 class="name">Alkahir Abdelmoneim</h6>
+        </a>
+        <p class="email">test@gmail.com &nbsp;- <span>تم التحقق</span></p>
         <p class="sign-out">
           <i class="fa fa-sign-out"></i>
         </p>
 
-        <button class="btn">تعديل الملف الشخصي</button>
+        <a href="updateProfile.html" class="btn">تعديل الملف الشخصي</a>
 
         <div class="social-media">
           <span>
@@ -77,143 +84,118 @@
             <i class="fa fa-facebook"></i>
           </span>
         </div>
+      </div>
+      <div class="list-view">
+        <ul>
+          <li>
+            <i class="fa fa-clock-o"></i>
+            <a href="index.html">
+              مواعيد إصدار الحلقات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-fire"></i>
+            <a href="index.html">
+              اخر الحلقات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-fire"></i>
+            <a href="index.html">
+              اخر حلقات الكرتون
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-heart"></i>
+            <a href="fav.html">
+              قائمتي
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-exclamation-circle"></i>
+            <a href="index.html">
+              الإقتراحات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-share-alt"></i>
+            <a href="index.html">
+              شارك الموقع
+            </a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-
-    <div class="list-view">
-      <ul>
-        <li>
-          <i class="fa fa-clock-o"></i>
-          <a href="http://">
-          مواعيد إصدار الحلقات
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-fire"></i>
-          <a href="http://">
-          اخر الحلقات
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-fire"></i>
-          <a href="http://">
-          اخر حلقات الكرتون
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-heart"></i>
-          <a href="http://">
-          قائمتي
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-exclamation-circle"></i>
-          <a href="http://">
-          الإقتراحات
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-share-alt"></i>
-          <a href="http://">
-          شارك الموقع
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-exclamation-circle"></i>
-          <a href="http://">
-          الإقتراحات
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-share-alt"></i>
-          <a href="http://">
-          شارك الموقع
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-exclamation-circle"></i>
-          <a href="http://">
-          الإقتراحات
-          </a>
-        </li>
-
-        <li>
-          <i class="fa fa-share-alt"></i>
-          <a href="http://">
-          شارك الموقع
-          </a>
-        </li>
-
-      </ul>
-    </div>
+    <div class="mt-3"></div>
 
   </section>
-<!-- End sidebar -->    
+  <!-- End sidebar -->
 
-<div class="slideshow-container">
+  <!-- 
+  <div class="slideshow-container">
 
-  <div class="mySlides">
-    <h4>تعرف علي المزيد...</h4>
-    <br>
-    <button class="btn btn-outline-dark">تعرف علي الخصم</button>
-  </div>
-  
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-  
-  </div>
-  
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
+    <div class="mySlides">
+      <h4>تعرف علي المزيد...</h4>
+      <br>
+      <button class="btn btn-outline-dark">تعرف علي الخصم</button>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div> -->
+  <!-- 
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+
 
   <div class="container">
-      <section class="div-1"> 
+    <section class="div-1">
       <div class="row">
-          <div class="col-md-4">
-              <i class="fa fa-star"></i>
-              <h6> بدون إعلانات</h6>
-              <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
-          </div>
-          <div class="col-md-4">
-              <i class="fa fa-star"></i>
-              <h6>توثيق الحساب</h6>
-              <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
-          </div>
-          <div class="col-md-4">
-              <i class="fa fa-star"></i>
-              <h6>رموز تفاعل خاصه</h6>
-              <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
-          </div>
+        <div class="col-md-4">
+          <i class="fa fa-star"></i>
+          <h6> بدون إعلانات</h6>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-star"></i>
+          <h6>توثيق الحساب</h6>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-star"></i>
+          <h6>رموز تفاعل خاصه</h6>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
+        </div>
       </div>
       <br>
       <div class="row">
         <div class="col-md-4">
-            <i class="fa fa-star"></i>
-            <h6> بدون إعلانات</h6>
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
+          <i class="fa fa-star"></i>
+          <h6> بدون إعلانات</h6>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
         </div>
         <div class="col-md-4">
-            <i class="fa fa-star"></i>
-            <h6>توثيق الحساب</h6>
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
+          <i class="fa fa-star"></i>
+          <h6>توثيق الحساب</h6>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
         </div>
         <div class="col-md-4">
-            <i class="fa fa-star"></i>
-            <h6>رموز تفاعل خاصه</h6>
-            <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
+          <i class="fa fa-star"></i>
+          <h6>رموز تفاعل خاصه</h6>
+          <p>هذا النص هو مثال لنص يمكن أن يستبدل </p>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
   </div>
 
   <div class="container">
@@ -221,130 +203,134 @@
       <section class="div-2">
         <div class="col-md-12">
           <div class="card fade-in ">
-              <div class="card-header">
-                  عرض خاص
-              </div>
-              <span class="card-head">نوفمبر 10$</span>
-              <div class="card-body">
-                <h2 class="card-title">
-                  <span class="dollar-num">26</span>
-                </h2>
-
-
-                  <div class="row">
-                    <ul class="sub-info">
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                    </ul>
-                  </div>
-                <a href="#" class="btn btn-primary">إشترك الان</a>
-              </div>
+            <div class="card-header">
+              عرض خاص
             </div>
-      </div>
+            <span class="card-head">نوفمبر 10$</span>
+            <div class="card-body">
+              <h2 class="card-title">
+                <span class="dollar-num">26</span>
+              </h2>
+
+
+              <div class="row">
+                <ul class="sub-info">
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-primary">إشترك الان</a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 
-      <section class="div-3"> 
+    <section class="div-3">
       <div class="row">
-          <div class="col-md-4">
-              <div class="card">
-                  <div class="card-header">
-                    شهري
-                  </div>
-                  <div class="card-body">
-                    <span class="card-head">نوفمبر 10$</span>
-                    <h2 class="card-title">
-                      <span class="dollar2">
-                        99
-                        شهر
-                      </span>
-                      <!-- <span class="dollar3"></span> -->
-                      <span class="dollar-num">2</span> 
-                      <span class="dollar1">&dollar;</span></h2>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              شهري
+            </div>
+            <div class="card-body">
+              <span class="card-head">نوفمبر 10$</span>
+              <h2 class="card-title">
+                <span class="dollar2">
+                  99
+                  شهر
+                </span>
+                <!-- <span class="dollar3"></span> -->
+                <span class="dollar-num">2</span>
+                <span class="dollar1">&dollar;</span>
+              </h2>
 
-                      <div class="row">
-                        <ul class="sub-info">
-                          <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                          <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                          <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                          <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                          <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                        </ul>
-                      </div>
-                    <a href="#" class="btn btn-primary">إشترك الان</a>
-                  </div>
-                </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">
-                  شهري
-                </div>
-                <div class="card-body">
-                  <!-- <span class="card-head">نوفمبر 10$</span> -->
-                  <h2 class="card-title">
-                    <span class="dollar2">
-                      99
-                      شهر
-                    </span>
-                    <!-- <span class="dollar3"></span> -->
-                    <span class="dollar-num">2</span> 
-                    <span class="dollar1">&dollar;</span></h2>
-
-                    <div class="row">
-                      <ul class="sub-info">
-                        <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                        <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                        <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                        <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                        <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      </ul>
-                    </div>
-                  <a href="#" class="btn btn-primary">إشترك الان</a>
-                </div>
+              <div class="row">
+                <ul class="sub-info">
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                </ul>
               </div>
+              <a href="#" class="btn btn-primary">إشترك الان</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-              <div class="card-header">
-                شهري
-              </div>
-              <div class="card-body">
-                <span class="card-head">نوفمبر 10$</span>
-                <h2 class="card-title">
-                  <span class="dollar2">
-                    99
-                    شهر
-                  </span>
-                  <!-- <span class="dollar3"></span> -->
-                  <span class="dollar-num">2</span> 
-                  <span class="dollar1">&dollar;</span></h2>
-
-                  <div class="row">
-                    <ul class="sub-info">
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                      <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
-                    </ul>
-                  </div>
-                <a href="#" class="btn btn-primary">إشترك الان</a>
-              </div>
+            <div class="card-header">
+              شهري
             </div>
-      </div>                              
+            <div class="card-body">
+              <!-- <span class="card-head">نوفمبر 10$</span> -->
+              <h2 class="card-title">
+                <span class="dollar2">
+                  99
+                  شهر
+                </span>
+                <!-- <span class="dollar3"></span> -->
+                <span class="dollar-num">2</span>
+                <span class="dollar1">&dollar;</span>
+              </h2>
+
+              <div class="row">
+                <ul class="sub-info">
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-primary">إشترك الان</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              شهري
+            </div>
+            <div class="card-body">
+              <span class="card-head">نوفمبر 10$</span>
+              <h2 class="card-title">
+                <span class="dollar2">
+                  99
+                  شهر
+                </span>
+                <!-- <span class="dollar3"></span> -->
+                <span class="dollar-num">2</span>
+                <span class="dollar1">&dollar;</span>
+              </h2>
+
+              <div class="row">
+                <ul class="sub-info">
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                  <li> <span class="fa fa-check"></span> النص هو مثال لنص يمكن</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-primary">إشترك الان</a>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
   </div>
-    
-      <script src="./js/jQuery v3.6.0.js"></script>
-    <script src="./js/subscription.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/sidebar.js"></script>
+
+  <script src="./js/jQuery v3.6.0.js"></script>
+  <script src="./js/subscription.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/sidebar.js"></script>
 
 </body>
+
 </html>

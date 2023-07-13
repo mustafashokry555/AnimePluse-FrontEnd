@@ -1,27 +1,32 @@
-:root{
-  --wite:#fff;
-  --red:#CA1919;
+:root {
+  --wite: #fff;
+  --red: #B41D1E;
 }
 
-.float-right{
+.float-right {
   float: right;
 }
 
 
-.sidebar{
-  
+.sidebar {
+
   color: var(--wite);
   position: fixed;
   z-index: 999;
-  width: 250px;
-  height: 100%;
+  width: 270px;
+  height: 100vh;
   top: 0px;
-  right: -250px;
+  right: -270px;
   transition: none;
   background-color: #121212;
+  
 }
 
-.blur-img{
+.sidebar .side-content{
+  height: 100%;
+}
+
+.blur-img {
   filter: blur(10px);
   position: absolute;
   z-index: -1;
@@ -29,66 +34,67 @@
   height: 100%;
 }
 
-.blur-img img{
+.blur-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.toggle-icon{
+.toggle-icon {
   position: absolute;
   z-index: 99999;
   left: -40px;
-top: 15px;
-background: #121212;
-border-radius: 5px 0 0 5px;
+  top: 15px;
+  background: #121212;
+  border-radius: 5px 0 0 5px;
 
 }
 
-.toggle-icon i{
-color: var(--wite);
-padding: 10px;
-font-size: 24px;
-cursor: pointer;
-display: block;
+.toggle-icon i {
+  color: var(--wite);
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
 }
 
-.user{
+.user {
   text-align: center;
   padding: 10px 20px;
+  height: 267px;
 }
 
-.user img{
+.user img {
   margin-left: 5px;
   background-color: var(--wite);
   padding: 1px;
   margin-bottom: 10px;
   width: 70px;
   border-radius: 50px;
- 
+
 }
 
-.user h6{
+.user h6 {
   font-size: 14px;
 }
 
-.email{
+.email {
   font-size: 12px;
   color: #ccc;
   margin: 0;
 }
 
-.email span{
+.email span {
   color: rgb(73, 231, 34);
 }
 
-.user .sign-out{
+.user .sign-out {
   font-size: 24px;
   color: var(--red);
   margin: 0;
 }
 
-.user .btn{
+.user .btn {
   margin-top: 5px;
   background: linear-gradient(to right, #646c6f, #161515);
   border: none;
@@ -96,26 +102,26 @@ display: block;
   color: var(--wite);
 }
 
-.btn:focus{
+.btn:focus {
   box-shadow: none;
 }
 
-.btn:hover{
-  box-shadow: 0 0   4px var(--wite);
+.btn:hover {
+  box-shadow: 0 0 4px var(--wite);
 }
 
-.social-media{
+.social-media {
   margin-top: 10px;
   text-align: center;
   margin-top: 0 10px;
 }
 
-.social-media ul{
+.social-media ul {
   padding: 0;
   margin: 0;
 }
 
-.social-media span{
+.social-media span {
   padding: 5px;
   color: var(--red);
   margin-left: 4px;
@@ -123,47 +129,67 @@ display: block;
   cursor: pointer;
 }
 
-.social-media span i:hover{
+.social-media span i:hover {
   color: var(--wite);
 }
 
-.list-view{
+.list-view {
   padding: 0;
-  margin: 20px;
-font-size: 16px;
-overflow: scroll;
-height: 300px;
+  margin: 15px;
+  font-size: 16px;
+  height: calc(100% - 280px) !important;
+  overflow: hidden;
 }
 
-.list-view ul{
-  padding: 0;
-  
+.list-view ul {
+  padding: 2px;
+  height: 100%;
+  overflow-y: auto ;
 }
 
-.list-view ul li:not(last-child){
+.list-view ul li:not(last-child) {
   margin-bottom: 20px;
 }
 
-.list-view ul i{
+.list-view ul i {
   margin-left: 10px;
   font-size: 18px;
-  
+
 }
 
-.list-view ul li a{
+.list-view ul li a {
   color: var(--wite);
 }
 
-.list-view ul li a:hover{
-  font-size: 18px;
+.list-view ul li:hover a,.list-view ul li:hover i{
   cursor: pointer;
   color: var(--red);
 }
 
-.box-control{
+.box-control {
   position: absolute;
   width: 1000%;
-height: 100%;
-right: 250px;
-display: none;
+  height: 100%;
+  right: 250px;
+  display: none;
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb  {
+  background: var(--red);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #630f0f;
+}
+
