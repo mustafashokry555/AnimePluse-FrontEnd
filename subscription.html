@@ -7,6 +7,7 @@
     <title>subscription</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
     <link rel="stylesheet" href="./css/subscription.css">
 
 
@@ -14,31 +15,147 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-        <a href="#" class="logo">
-            <img src="./img/logo.png" alt="" srcset="">
-            </a>
-            <div class="mean-toggle"></div>
-            <nav>
-              <ul>
-                  <li><a class="buttons-effect border-right" href="index.html">
-                    الرئيسية
-                    <span></span>
-                </a></li>
-                  <li><a class="buttons-effect border-right" href="login.html">
-                    سجل الاَن
-                    <span></span>
-                  </a></li>
-                  <li><a class="buttons-effect border-right" href="login.html">
-                    دخول
-                    <span></span>
-                  </a></li>
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg navbarDark">
+      <div class="container">
+      <div class="row" style="width: 100%;">
+          <div class="col-md-6 col-sm-6 col-lg-6 logo-img">
+          <a class="navbar-brand" href="#">
+              <img src="./img/logo.png" alt="" srcset="">
+          </a>
+          </div>
+          <div class="col-md-6 col-sm-6 col-lg-6 nav-link-info">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">
+                      <i class="fa fa-heart"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link buttons-effect border-right" href="about-us.html">
+                      <i class="fa fa-cog"></i>
+                      </a>
+                      
+                  </li>
               </ul>
-            </nav>
-            <div class="clear"></div>
+          </div>
+      </div>
+      </div>
+  </nav>
+  <!-- End navbar -->
+
+<!-- start sidebar -->
+  <section class="sidebar side-width">
+  <div class="blur-img">
+    <img src="./img/image_4.jpg" alt="" srcset="">
+  </div>
+    <div class="toggle-icon">
+      <i class="fa fa-navicon"></i>
     </div>
-</header>
+
+    <div class="user">
+      <img class="" src="./img/user_profile.png" alt="">
+        <h6 class="name">Alkahir Abdelmoneim</h6>
+        <p class="email">test@gmail.com &nbsp;- <span>تم التحقق</span></p> 
+        <p class="sign-out">
+          <i class="fa fa-sign-out"></i>
+        </p>
+
+        <button class="btn">تعديل الملف الشخصي</button>
+
+        <div class="social-media">
+          <span>
+            <i class="fa fa-telegram"></i>
+          </span>
+          <span>
+            <i class="fa fa-instagram"></i>
+          </span>
+          <span>
+            <i class="fa fa-twitter"></i>
+          </span>
+          <span>
+            <i class="fa fa-facebook"></i>
+          </span>
+        </div>
+    </div>
+
+    <div class="list-view">
+      <ul>
+        <li>
+          <i class="fa fa-clock-o"></i>
+          <a href="http://">
+          مواعيد إصدار الحلقات
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-fire"></i>
+          <a href="http://">
+          اخر الحلقات
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-fire"></i>
+          <a href="http://">
+          اخر حلقات الكرتون
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-heart"></i>
+          <a href="http://">
+          قائمتي
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-exclamation-circle"></i>
+          <a href="http://">
+          الإقتراحات
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-share-alt"></i>
+          <a href="http://">
+          شارك الموقع
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-exclamation-circle"></i>
+          <a href="http://">
+          الإقتراحات
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-share-alt"></i>
+          <a href="http://">
+          شارك الموقع
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-exclamation-circle"></i>
+          <a href="http://">
+          الإقتراحات
+          </a>
+        </li>
+
+        <li>
+          <i class="fa fa-share-alt"></i>
+          <a href="http://">
+          شارك الموقع
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </section>
+<!-- End sidebar -->    
 
 <div class="slideshow-container">
 
@@ -227,5 +344,7 @@
     <script src="./js/subscription.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/sidebar.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,169 @@
+:root{
+  --wite:#fff;
+  --red:#CA1919;
+}
+
+.float-right{
+  float: right;
+}
+
+
+.sidebar{
+  
+  color: var(--wite);
+  position: fixed;
+  z-index: 999;
+  width: 250px;
+  height: 100%;
+  top: 0px;
+  right: -250px;
+  transition: none;
+  background-color: #121212;
+}
+
+.blur-img{
+  filter: blur(10px);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.blur-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toggle-icon{
+  position: absolute;
+  z-index: 99999;
+  left: -40px;
+top: 15px;
+background: #121212;
+border-radius: 5px 0 0 5px;
+
+}
+
+.toggle-icon i{
+color: var(--wite);
+padding: 10px;
+font-size: 24px;
+cursor: pointer;
+display: block;
+}
+
+.user{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.user img{
+  margin-left: 5px;
+  background-color: var(--wite);
+  padding: 1px;
+  margin-bottom: 10px;
+  width: 70px;
+  border-radius: 50px;
+ 
+}
+
+.user h6{
+  font-size: 14px;
+}
+
+.email{
+  font-size: 12px;
+  color: #ccc;
+  margin: 0;
+}
+
+.email span{
+  color: rgb(73, 231, 34);
+}
+
+.user .sign-out{
+  font-size: 24px;
+  color: var(--red);
+  margin: 0;
+}
+
+.user .btn{
+  margin-top: 5px;
+  background: linear-gradient(to right, #646c6f, #161515);
+  border: none;
+  border-radius: 20px;
+  color: var(--wite);
+}
+
+.btn:focus{
+  box-shadow: none;
+}
+
+.btn:hover{
+  box-shadow: 0 0   4px var(--wite);
+}
+
+.social-media{
+  margin-top: 10px;
+  text-align: center;
+  margin-top: 0 10px;
+}
+
+.social-media ul{
+  padding: 0;
+  margin: 0;
+}
+
+.social-media span{
+  padding: 5px;
+  color: var(--red);
+  margin-left: 4px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.social-media span i:hover{
+  color: var(--wite);
+}
+
+.list-view{
+  padding: 0;
+  margin: 20px;
+font-size: 16px;
+overflow: scroll;
+height: 300px;
+}
+
+.list-view ul{
+  padding: 0;
+  
+}
+
+.list-view ul li:not(last-child){
+  margin-bottom: 20px;
+}
+
+.list-view ul i{
+  margin-left: 10px;
+  font-size: 18px;
+  
+}
+
+.list-view ul li a{
+  color: var(--wite);
+}
+
+.list-view ul li a:hover{
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--red);
+}
+
+.box-control{
+  position: absolute;
+  width: 1000%;
+height: 100%;
+right: 250px;
+display: none;
+}

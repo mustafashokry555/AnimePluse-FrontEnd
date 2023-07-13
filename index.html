@@ -11,41 +11,154 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <script src="js/c32adfdcda.js"></script>
 
-    <style>
-
-
-    </style>
 </head>
 
 <body dir="rtl">
 
-    <header class="header">
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg navbarDark">
         <div class="container">
-            <a href="#" class="logo">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-6 col-sm-6 col-lg-6 logo-img">
+            <a class="navbar-brand" href="#">
                 <img src="./img/logo.png" alt="" srcset="">
             </a>
-            <div class="mean-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a class="buttons-effect border-right" href="index.html">
-                            الرئيسية
-                            <span></span>
-                        </a></li>
-                    <li><a class="buttons-effect border-right" href="login.html">
-                            سجل الاَن
-                            <span></span>
-                        </a></li>
-                    <li><a class="buttons-effect border-right" href="login.html">
-                            دخول
-                            <span></span>
-                        </a></li>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 nav-link-info">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                        <i class="fa fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link buttons-effect border-right" href="about-us.html">
+                        <i class="fa fa-cog"></i>
+                        </a>
+                        
+                    </li>
                 </ul>
-            </nav>
-            <div class="clear"></div>
+            </div>
         </div>
-    </header>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+  <!-- start sidebar -->
+    <section class="sidebar side-width">
+    <div class="blur-img">
+      <img src="./img/image_4.jpg" alt="" srcset="">
+    </div>
+      <div class="toggle-icon">
+        <i class="fa fa-navicon"></i>
+      </div>
+
+      <div class="user">
+        <img class="" src="./img/user_profile.png" alt="">
+          <h6 class="name">Alkahir Abdelmoneim</h6>
+          <p class="email">test@gmail.com &nbsp;- <span>تم التحقق</span></p> 
+          <p class="sign-out">
+            <i class="fa fa-sign-out"></i>
+          </p>
+
+          <button class="btn">تعديل الملف الشخصي</button>
+
+          <div class="social-media">
+            <span>
+              <i class="fa fa-telegram"></i>
+            </span>
+            <span>
+              <i class="fa fa-instagram"></i>
+            </span>
+            <span>
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span>
+              <i class="fa fa-facebook"></i>
+            </span>
+          </div>
+      </div>
+
+      <div class="list-view">
+        <ul>
+          <li>
+            <i class="fa fa-clock-o"></i>
+            <a href="http://">
+            مواعيد إصدار الحلقات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-fire"></i>
+            <a href="http://">
+            اخر الحلقات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-fire"></i>
+            <a href="http://">
+            اخر حلقات الكرتون
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-heart"></i>
+            <a href="http://">
+            قائمتي
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-exclamation-circle"></i>
+            <a href="http://">
+            الإقتراحات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-share-alt"></i>
+            <a href="http://">
+            شارك الموقع
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-exclamation-circle"></i>
+            <a href="http://">
+            الإقتراحات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-share-alt"></i>
+            <a href="http://">
+            شارك الموقع
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-exclamation-circle"></i>
+            <a href="http://">
+            الإقتراحات
+            </a>
+          </li>
+
+          <li>
+            <i class="fa fa-share-alt"></i>
+            <a href="http://">
+            شارك الموقع
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+  <!-- End sidebar -->        
 
     <section class="main-slider">
         <div class="header-content h-100">
@@ -64,7 +177,8 @@
                     </div>
                     <div class="carousel-inner h-100">
                         <div class="carousel-item position-relative d-flex justify-content-center  h-100 active">
-                            <div class="h-100 w-100 position-absolute" style="background-image: url('img/fpkuP0kXVXIF9mBSry4jKJVpz8mDZCP7wc6eefKw.jpg');
+                            <div class="h-100 w-100 position-absolute"
+                                style="background-image: url('img/fpkuP0kXVXIF9mBSry4jKJVpz8mDZCP7wc6eefKw.jpg');
                                 background-size: cover ;
                                 background-position: center;
                                 filter: blur(8px);
@@ -85,7 +199,8 @@
                             </div>
                         </div>
                         <div class="carousel-item h-100">
-                            <img src="img/image_4.jpg" class="d-block h-100 w-100" alt="...">
+                            <img src="img/image_4.jpg" class="d-block h-100 w-100"
+                                alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -116,7 +231,7 @@
                 </a>
             </div>
         </section>
-
+        
         <section id="popular" class="section-padding">
             <div class="container">
 
@@ -133,8 +248,8 @@
                     </div>
                 </div>
 
-                <div class="owl-carousel popular-slider owl-theme">
-
+                <div  class="owl-carousel popular-slider owl-theme">
+                    
                     <div class="item movie-item">
                         <div class="row">
                             <div class="movie-poster-box p-0 col-5">
@@ -491,7 +606,7 @@
         <p><i class="fas fa-heart"></i> Made by Mu with</p>
     </footer>
 
-
+    
     <!-- <script src="./js/jQuery v3.6.0.js"></script> -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -499,7 +614,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
-
+    <script src="js/sidebar.js"></script>
+    
 
 </body>
 

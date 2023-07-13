@@ -2,7 +2,20 @@
     --wite:#fff;
     --red:#CA1919;
 }
-* {box-sizing: border-box}
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 body{
     direction: rtl;
     background-color: #000000;

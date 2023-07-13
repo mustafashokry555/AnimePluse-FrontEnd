@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --red:#CA1919;
     
 }
@@ -120,6 +120,7 @@ nav.active {
         text-align: center;
     }
 }
+*/
 
 .border-right span{
     width: 0%;
@@ -135,4 +136,125 @@ nav.active {
     bottom: -10px;
     display: block;
     z-index: 1;
+} 
+
+
+
+
+:root{
+    
+    --primary-color: #B41D1E;
+    --text-color-white: #FFF;
+    --text-color-dark: #000;
+    --text-color-grey: #a0afbb;
+    --background-color-grey: #f0f0f0;
+    --background-color-white: #FFF;
+    --background-color-dark: #333;
+    --background-color-black: #000;
 }
+
+
+/* Start navbar */
+
+.navbar{
+    height: 0;
+    padding: 0;
+    top: 40px;
+    z-index: 10;
+}
+
+.navbarDark{
+    background-color: #121212 !important;
+}
+
+.navbar-brand{
+    margin-right: 4rem;
+}
+.navbar-brand img{
+ width: 200px;
+}
+.navbar .collapse{
+    flex-grow: 0;
+}
+
+.nav-link-info, .logo-img{
+    width: 50%;
+}
+
+.navbar-nav{
+    justify-content: left;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 4px 10px;
+    color: var(--text-color-white);
+    font-size: 24px;
+    font-weight: bold;
+    
+    
+}
+
+.navbar .nav-item:hover{
+    /* margin-left: 15px; */
+    text-align: center;
+    background:  var(--primary-color);
+    
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--text-color-white);
+    transition: .5s;
+}
+
+.dropdown-toggle::after{
+    position: relative;
+    color: var(--primary-color);
+    top: 26px;
+    left: 50px;
+    z-index: 10000;
+}
+
+.navbar .collapse li:hover{
+    color: var(--primary-color);
+    transition: 1s;
+}
+
+.navbar .collapse .dropdown-menu{
+    background-color: rgba(11, 8, 43, .6);
+}
+
+.navbar .collapse .dropdown-menu .dropdown-item:hover{
+    color: #333;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+/* End navbar */
+
+
+@media screen and (max-width: 991px) {
+    .navbar{
+      top: 15px;
+    }
+
+    .navbar-nav{
+        display: block ruby;
+        text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 413px) {
+
+    .nav-link-info, .logo-img, .navbar-nav{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .navbar-brand ,.navbar-nav{
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+
+  
