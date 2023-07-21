@@ -465,26 +465,26 @@ font-size: 14px;
   margin-left: 10px;
 }
 
-.videos .card .card-body .arrow-down {
+.videos .card .card-body .whatch-down {
   position: absolute;
-  left: 20px;
-  bottom: 26px;
+  left: 8px;
+  bottom: 14px;
 }
 
-#comments .modal-content {
+.modal .modal-content {
   background-color: var(--bg-section);
   color: var(--white);
 }
 
-#comments .modal-header .btn-close {
+.modal .modal-header .btn-close {
   padding: .5rem .5rem;
   margin: 0;
   color: var(--white);
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat !important;
 }
 
-#comments .modal-body {
-  padding: 0 20px;
+.modal .modal-body {
+  padding: 10px 20px;
   margin: 0;
   border: 0;
   border-radius: 0;
@@ -497,25 +497,23 @@ font-size: 14px;
   border-radius: 10px;
 }
 
-#comments .modal-footer {
+.modal .modal-footer {
   justify-content: right;
 }
 
-#comments .comment .modal-header {
+.modal .comment .modal-header {
   background-color: var(--white);
   color: #000000;
 }
 
-#comments .modal .warning {
+.modal .warning {
   font-size: 14px;
   border: 1px solid var(--white);
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px;
   border-radius: 10px;
 }
 
-#comments .modal-footer .close {
+.modal .modal-footer .close {
   padding: 5px 25px;
 }
 
@@ -582,11 +580,11 @@ font-size: 14px;
 }
 
 
-.videos .check-option {
+.modal .check-option {
   margin-top: 10px;
 }
 
-.videos .check-option .send {
+.modal .check-option .send {
   border-radius: 10px;
   border: 1px solid var(--red);
   padding: 5px 30px;
@@ -596,47 +594,53 @@ font-size: 14px;
 
 }
 
-.videos .check-option .send:hover {
+.modal .check-option .send:hover {
   background-color: #cbd1d8;
   color: var(--red);
   border: none;
 }
 
-.videos .video-img {
+.dpx{
+  display:flex;
+  align-items:center;
+  justify-content:right;
+}
+
+.modal .video-img {
   overflow: hidden;
   padding: 0 !important;
   position: relative;
 }
 
-.videos .video-img .video-text {
+.modal .video-img .video-text {
   position: absolute;
   transform: translate(50%, 50%);
   right: 50%;
   text-align: center;
 }
 
-.videos .video-img .video-text .text-1 {
+.modal .video-img .video-text .text-1 {
   font-size: 12px;
 }
 
 
-.videos .video-img .video-text .text-1 span {
+.modal .video-img .video-text .text-1 span {
   background-color: #fcfcfc63;
   padding: 1px 7px;
   border-radius: 5px;
 }
 
-.videos .video-img .video-text .text-2 {
+.modal .video-img .video-text .text-2 {
   margin: 0;
 }
 
 
-.videos .video-img img {
+.modal .video-img img {
   width: 100%;
   object-fit: cover;
 }
 
-.videos .whatch-option .whatch-now {
+.modal .whatch-option .whatch-now {
   border-radius: 10px;
   background-color: var(--red);
   padding: 5px 30px;
@@ -650,7 +654,7 @@ font-size: 14px;
   padding: 10px;
 }
 
-.videos .whatch-option .download-now {
+.modal .whatch-option .download-now {
   border-radius: 10px;
   background-color: #cbd1d8;
   padding: 5px 30px;
@@ -662,6 +666,72 @@ font-size: 14px;
 
 ul {
   list-style: none;
+}
+
+
+label{
+  display:block;
+  line-height:40px;
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: var(--red);
+}
+
+.option-input:checked::before {
+  width: 25px;
+  height: 25px;
+  display:flex;
+  content: '\f00c';
+  font-size: 14px;
+  font-weight:bold;
+  position: absolute;
+  align-items:center;
+  justify-content:center;
+  font-family:'Font Awesome 5 Free';
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: var(--red);
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
 }
 
 .video-search,
