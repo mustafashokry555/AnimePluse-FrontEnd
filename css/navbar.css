@@ -122,27 +122,27 @@ nav.active {
 }
 */
 
-.border-right span{
+.border-right span {
     width: 0%;
-    height: 2px;    
+    height: 2px;
     background-color: var(--red);
     top: auto;
     bottom: -3px;
 }
 
-.buttons-effect span:first-child{
+.buttons-effect span:first-child {
     position: relative;
     right: 0;
     bottom: -10px;
     display: block;
     z-index: 1;
-} 
+}
 
 
 
 
-:root{
-    
+:root {
+
     --primary-color: #B41D1E;
     --text-color-white: #FFF;
     --text-color-dark: #000;
@@ -156,58 +156,61 @@ nav.active {
 
 /* Start navbar */
 
-.navbar{
+.navbar {
     height: 0;
     padding: 0;
-    top: 40px;
+    top: 15px;
     z-index: 10;
 }
 
-.navbarDark{
+.navbarDark {
     background-color: #121212 !important;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-right: 4rem;
 }
-.navbar-brand img{
- width: 200px;
+
+.navbar-brand img {
+    width: 200px;
 }
-.navbar .collapse{
+
+.navbar .collapse {
     flex-grow: 0;
 }
 
-.nav-link-info, .logo-img{
+.nav-link-info,
+.logo-img {
     /* width: 50%; */
 }
 
-.navbar-nav{
+.navbar-nav {
     justify-content: left;
     flex-direction: initial;
 }
 
-.navbar .navbar-nav .nav-link{
+.navbar .navbar-nav .nav-link {
     padding: 4px 10px;
     color: var(--text-color-white);
     font-size: 24px;
     font-weight: bold;
-    
-    
+
+
 }
 
-.navbar .nav-item:hover i{
+.navbar .nav-item:hover i {
     /* margin-left: 15px; */
     text-align: center;
-    color:  var(--primary-color);
-    
+    color: var(--primary-color);
+
 }
 
-.navbar .navbar-nav .nav-link:hover{
+.navbar .navbar-nav .nav-link:hover {
     color: var(--text-color-white);
     transition: .5s;
 }
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
     position: relative;
     color: var(--primary-color);
     top: 26px;
@@ -215,47 +218,57 @@ nav.active {
     z-index: 10000;
 }
 
-.navbar .collapse li:hover{
+.navbar .collapse li:hover {
     color: var(--primary-color);
     transition: 1s;
 }
 
-.navbar .collapse .dropdown-menu{
+.navbar .collapse .dropdown-menu {
     background-color: rgba(11, 8, 43, .6);
 }
 
-.navbar .collapse .dropdown-menu .dropdown-item:hover{
+.navbar .collapse .dropdown-menu .dropdown-item:hover {
     color: #333;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
 }
+
 /* End navbar */
 
 
 @media screen and (max-width: 991px) {
-    .navbar{
-      top: 15px;
+    .navbar {
+        top: 15px;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         display: block ruby;
         text-align: left;
     }
-  }
+}
 
-  @media screen and (max-width: 413px) {
+@media screen and (max-width: 413px) {
 
-    .nav-link-info, .logo-img, .navbar-nav{
+    .nav-link-info,
+    .logo-img,
+    .navbar-nav {
         /* width: 100%; */
         text-align: center;
-        
-    }
-    .navbar-brand ,.navbar-nav{
-      margin-right: 0;
-      padding-right: 0;
-    }
-  }
 
-  
+    }
+
+    .navbar-brand,
+    .navbar-nav {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+* {
+    font-family: 'Cairo', sans-serif ;
+}

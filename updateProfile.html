@@ -3,46 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/updateProfile.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/navbar.css"> -->
     <link rel="stylesheet" href="css/sidebar.css">
     <script src="js/c32adfdcda.js"></script>
+
+    <!-- font cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
     <title>Update profile</title>
 </head>
 
 <body dir="rtl" class="position-relative">
-
-    <!-- Start navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbarDark">
-        <div class="container">
-            <div class="row" style="width: 100%;">
-                <div class="col-11 text-md-center  logo-img">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./img/logo.png" alt="" srcset="">
-                    </a>
-                </div>
-                <div class="col-1 nav-link-info">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="fav.html">
-                                <i class="fa fa-heart"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link buttons-effect border-right" href="index.html">
-                                <i class="fa fa-cog"></i>
-                            </a>
-
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav> -->
-    <!-- End navbar -->
 
     <!-- start sidebar -->
     <section class="sidebar side-width">
@@ -53,7 +29,7 @@
             <div class="toggle-icon">
                 <i class="fa fa-navicon"></i>
             </div>
-    
+
             <div class="user">
                 <a href="profile.html">
                     <img class="" src="./img/user_profile.png" alt="">
@@ -65,9 +41,9 @@
                 <p class="sign-out">
                     <i class="fa fa-sign-out"></i>
                 </p>
-    
+
                 <a href="updateProfile.html" class="btn">تعديل الملف الشخصي</a>
-    
+
                 <div class="social-media">
                     <span>
                         <i class="fa fa-telegram"></i>
@@ -84,61 +60,61 @@
                 </div>
             </div>
             <div class="list-view">
-                <ul>  
+                <ul>
                     <li>
                         <i class="fa fa-clock-o"></i>
                         <a href="index.html">
                             مواعيد إصدار الحلقات
                         </a>
                     </li>
-    
+
                     <li>
                         <i class="fa fa-fire"></i>
                         <a href="index.html">
                             اخر الحلقات
                         </a>
                     </li>
-    
+
                     <li>
                         <i class="fa fa-fire"></i>
                         <a href="index.html">
                             اخر حلقات الكرتون
                         </a>
                     </li>
-    
+
                     <li>
                         <i class="fa fa-heart"></i>
                         <a href="fav.html">
                             قائمتي
                         </a>
                     </li>
-    
+
                     <li>
                         <i class="fa fa-exclamation-circle"></i>
                         <a href="index.html">
                             الإقتراحات
                         </a>
                     </li>
-    
+
                     <li>
                         <i class="fa fa-share-alt"></i>
                         <a href="index.html">
                             شارك الموقع
                         </a>
                     </li>
-    
+
                 </ul>
             </div>
         </div>
         <div class="mt-3"></div>
-        
+
     </section>
     <!-- End sidebar -->
 
-    <div class="overlay"></div>
-    <div class="container bootstrap snippets bootdeys">
+    <!-- <div class="overlay"></div> -->
+    <div class="container-lg container-fluid bootstrap snippets bootdeys">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-lg-8">
                 <form class="form-horizontal">
                     <div class="panel panel-default " style="margin-bottom: 120px;">
                         <div class="panel-body text-center position-relative" style="height: 250px;">
@@ -147,86 +123,52 @@
                                     class="w-100 h-100 profile-background" alt="User background">
                             </label>
                             <input class="d-none" id="background-input" type="file" />
-                            <label  for="avatar-input">
+                            <label for="avatar-input">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
                                     class="rounded-circle profile-avatar" alt="User avatar">
                             </label>
-                            <input  class="d-none" id="avatar-input" type="file" />
+                            <input class="d-none" id="avatar-input" type="file" />
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">بيانات المستخدم</h4>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">الأسم</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">العنوان</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">تاريخ الميلاد</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">السيره الذاتيه</label>
-                                <div class="col-sm-10">
-                                    <textarea rows="3" class="form-control"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">بيانات التواصل</h4>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">حساب فيسبوك</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">حساب تويتر</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">حساب انستجرام</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control">
-                                </div>
+                        <div class="panel-body row w-100">
+                            <div class="input-box col-12">
+                                <input type="text" placeholder="" class="input" required="required">
+                                <label for="username">الأسم</label>
+                                <i class="input-icon fa fa-user"></i>
                             </div>
 
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">كلمه السر</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control">
-                                </div>
+                            <div class="input-box col-12">
+                                <input type="text" placeholder="" class="input" required="required">
+                                <label for="username">فيسبوك</label>
+                                <i class="input-icon fa fa-facebook"></i>
                             </div>
-                            <!-- <div class="form-group row  mb-4">
-                                <label class="text-center col-sm-2 control-label">New password</label>
-                                <div class="col-sm-10">
-                                    <input type="password" class="form-control">
-                                </div>
-                            </div> -->
+
+                            <div class="input-box col-12">
+                                <input type="text" placeholder="" class="input" required="required">
+                                <label for="username">العنوان</label>
+                                <i class="input-icon fa fa-map-marker"></i>
+                            </div>
+
+                            <div class="input-box col-12">
+                                <input type="text" placeholder="" class="input" required="required">
+                                <label for="username">تاريخ الميلاد</label>
+                                <i class="input-icon fa fa-calendar"></i>
+                            </div>
+
+                            <div class="input-box col-12">
+                                <input type="text" placeholder="" class="input" required="required">
+                                <label for="username">السيره الذاتيه</label>
+                                <i class="input-icon fa fa-copy"></i>
+                            </div>
+
+                            <div class="input-box col-12">
+                                <input type="text" placeholder="" class="input" required="required">
+                                <label for="username">كلمه السر</label>
+                                <i class="input-icon fa fa-lock"></i>
+                            </div>
+
                             <div class="form-group row  mb-1">
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">تحــديــث</button>
@@ -243,4 +185,5 @@
     <!-- <script src="js/navbar.js"></script> -->
     <script src="js/sidebar.js"></script>
 </body>
+
 </html>

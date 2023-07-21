@@ -1,27 +1,26 @@
-$(document).ready(function() {
-      $('.mean-toggle').click(function()
-      {
-      $('.mean-toggle').toggleClass('active')
-      $('nav').toggleClass('active')
-      })
+$(document).ready(function () {
+    $('.mean-toggle').click(function () {
+        $('.mean-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+    })
 
 
-      $('.border-right').hover(function() {
-      $(this).find('span').eq(0).animate({
+    $('.border-right').hover(function () {
+        $(this).find('span').eq(0).animate({
 
             width: '100%'
 
-      }, 300);
+        }, 300);
 
-      }, function() {
+    }, function () {
 
-      $(this).find('span').eq(0).animate({
+        $(this).find('span').eq(0).animate({
 
             width: 0
 
-      }, 300)
+        }, 300)
 
-      });
+    });
 
 
 
@@ -45,20 +44,20 @@ $(document).ready(function() {
             }, 300);
 
         } else {
-            
+
             if ($(window).height(0)) {
                 navScroll.css({
                     height: 0,
                     padding: 0,
                     zindex: '10',
-                    top: '40px',
+                    top: '15px',
                     transition: '1s'
 
                 }, 300);
             }
         }
 
-        
+
     });
 
 });

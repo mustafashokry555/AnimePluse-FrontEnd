@@ -23,133 +23,144 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  <!-- End Owl Carousel Assets -->
   <!-- font  awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Start navbar -->
-  <nav class="navbar navbar-expand-lg navbarDark">
-    <div class="container">
-      <div class="row" style="width: 100%;">
-        <div class="col-11 text-md-center  logo-img">
-          <a class="navbar-brand" href="index.html">
-            <img src="./img/logo.png" alt="" srcset="">
-          </a>
-        </div>
-        <div class="col-1 nav-link-info">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="fav.html">
-                <i class="fa fa-heart"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link buttons-effect border-right" href="index.html">
-                <i class="fa fa-cog"></i>
-              </a>
+    <!-- Start navbar -->
+    <nav class="navbar  navbarDark">
+      <div class="container   ">
+          <div class="row" style="width: 100%;">
+              <div class="col-11 text-center  logo-img">
+                  <a class="navbar-brand" href="index.html">
+                      <img src="./img/logo.png" alt="" srcset="">
+                  </a>
+              </div>
+              <div class="col-1 nav-link-info">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="fav.html">
+                              <i class="fa fa-heart"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link buttons-effect border-right" href="index.html">
+                              <i class="fa fa-cog"></i>
+                          </a>
 
-            </li>
-          </ul>
-        </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-    </div>
   </nav>
   <!-- End navbar -->
 
   <!-- start sidebar -->
   <section class="sidebar side-width">
-    <div class="side-content">
-      <div class="blur-img">
-        <img src="./img/image_4.jpg" alt="" srcset="">
+      <div class="side-content">
+
+          <div class="toggle-icon">
+              <i class="fa fa-navicon"></i>
+          </div>
+
+          <div class="user">
+              <div class="user-info">
+                  <a href="profile.html">
+                      <img class="" src="./img/user_profile.png" alt="">
+                  </a>
+                  <a href="profile.html" style="all: unset; cursor: pointer;">
+                      <h6 class="name">Alkahir Abdelmoneim</h6>
+                  </a>
+                  <p class="email">test@gmail.com &nbsp;- <span>تم التحقق</span></p>
+                  <p class="sign-out">
+                      <i class="fa fa-sign-out"></i>
+                  </p>
+              </div>
+
+              <a href="updateProfile.html" class="btn">تعديل الملف الشخصي</a>
+              <a href="https://animeeplus.net/subscriptions/" class="btn subsc-btn">إشتراك الاَن</a>
+
+
+              <div class="social-media">
+                  <span>
+                      <i class="fa fa-telegram"></i>
+                  </span>
+                  <span>
+                      <i class="fa fa-instagram"></i>
+                  </span>
+                  <span>
+                      <i class="fa fa-twitter"></i>
+                  </span>
+                  <span>
+                      <i class="fa fa-facebook"></i>
+                  </span>
+              </div>
+          </div>
+          <div class="list-view">
+              <ul>
+                  <li>
+                      <i class="fa fa-clock-o"></i>
+                      <a href="index.html">
+                          مواعيد إصدار الحلقات
+                      </a>
+                  </li>
+
+                  <li>
+                      <i class="fa fa-fire"></i>
+                      <a href="index.html">
+                          اخر الحلقات
+                      </a>
+                  </li>
+
+                  <li>
+                      <i class="fa fa-fire"></i>
+                      <a href="index.html">
+                          اخر حلقات الكرتون
+                      </a>
+                  </li>
+
+                  <li>
+                      <i class="fa fa-heart"></i>
+                      <a href="fav.html">
+                          قائمتي
+                      </a>
+                  </li>
+
+                  <li>
+                      <i class="fa fa-exclamation-circle"></i>
+                      <a href="index.html">
+                          الإقتراحات
+                      </a>
+                  </li>
+
+                  <li>
+                      <i class="fa fa-share-alt"></i>
+                      <a href="index.html">
+                          شارك الموقع
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
       </div>
-      <div class="toggle-icon">
-        <i class="fa fa-navicon"></i>
-      </div>
-
-      <div class="user">
-        <a href="profile.html">
-          <img class="" src="./img/user_profile.png" alt="">
-        </a>
-        <a href="profile.html" style="all: unset; cursor: pointer;">
-          <h6 class="name">Alkahir Abdelmoneim</h6>
-        </a>
-        <p class="email">test@gmail.com &nbsp;- <span>تم التحقق</span></p>
-        <p class="sign-out">
-          <i class="fa fa-sign-out"></i>
-        </p>
-
-        <a href="updateProfile.html" class="btn">تعديل الملف الشخصي</a>
-
-        <div class="social-media">
-          <span>
-            <i class="fa fa-telegram"></i>
-          </span>
-          <span>
-            <i class="fa fa-instagram"></i>
-          </span>
-          <span>
-            <i class="fa fa-twitter"></i>
-          </span>
-          <span>
-            <i class="fa fa-facebook"></i>
-          </span>
-        </div>
-      </div>
-      <div class="list-view">
-        <ul>
-          <li>
-            <i class="fa fa-clock-o"></i>
-            <a href="index.html">
-              مواعيد إصدار الحلقات
-            </a>
-          </li>
-
-          <li>
-            <i class="fa fa-fire"></i>
-            <a href="index.html">
-              اخر الحلقات
-            </a>
-          </li>
-
-          <li>
-            <i class="fa fa-fire"></i>
-            <a href="index.html">
-              اخر حلقات الكرتون
-            </a>
-          </li>
-
-          <li>
-            <i class="fa fa-heart"></i>
-            <a href="fav.html">
-              قائمتي
-            </a>
-          </li>
-
-          <li>
-            <i class="fa fa-exclamation-circle"></i>
-            <a href="index.html">
-              الإقتراحات
-            </a>
-          </li>
-
-          <li>
-            <i class="fa fa-share-alt"></i>
-            <a href="index.html">
-              شارك الموقع
-            </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-    <div class="mt-3"></div>
+      <div class="mt-3"></div>
 
   </section>
   <!-- End sidebar -->
 
 
+  <!-- 
   <section>
     <div class="slider">
       <div class="shadow"></div>
@@ -162,24 +173,148 @@
           قاتل الشياطين مدبلج
         </h4>
         <p>
-          <span class="views"><i class="fa fa-eye"></i>10,277 ألف </span>
-          <span class="complete">مكتمل</span>
+          <span class="views"><i class="fa fa-eye"></i> 10,277 ألف </span>
         </p>
-        <p>التقييم العالمي: 8.8 &nbsp;&nbsp;
-          <span>7-6-23 </span>&nbsp;&nbsp;
-          <span>عدد الموسم: 3</span>&nbsp;&nbsp;
-          <span>مستمر</span>
-        </p>
+
+        <ul class="list-style d-flex justify-content-center align-items-center  p-0">
+          <li class="px-1 list-text-1">
+            <i class="fa fa-star"></i> 8.8
+          </li>
+          <span class="pb-3" style=" font-size: 30px; color: #B41D1E;"> . </span>
+          <li class="px-1 list-text-2">
+            2023-07-04
+          </li>
+          <span class="pb-3" style="font-size: 30px; color: #B41D1E;"> . </span>
+          <li class=" px-1 list-text-3">
+            عدد الموسم: 3
+          </li>
+          <span class="pb-3" style="font-size: 30px; color: #B41D1E;"> . </span>
+          <li class="px-1 list-text-4">
+            مستمر
+          </li>
+        </ul>
+
       </div>
 
+    </div>
+  </section> -->
+
+  <section class="slider">
+
+    <div class="shadow"></div>
+    <div class="image-slide" style="background-image: url('./img/51107.jpg');">
+      <!-- <img src=""> -->
+    </div>
+    <div class="text-image">
+      <img src="./img/51107.jpg">
+      <h4>
+        قاتل الشياطين مدبلج
+      </h4>
+      <p>
+        <span class="views"><i class="fa fa-eye"></i> 10,277 ألف </span>
+      </p>
+
+      <ul class="list-style d-flex justify-content-center align-items-center  p-0">
+        <li class="px-1 list-text-1">
+          <i class="fa fa-star"></i> 8.8
+        </li>
+        <span class="pb-3" style=" font-size: 30px; color: #B41D1E;"> . </span>
+        <li class="px-1 list-text-2">
+          2023-07-04
+        </li>
+        <span class="pb-3" style="font-size: 30px; color: #B41D1E;"> . </span>
+        <li class=" px-1 list-text-3">
+          عدد الموسم: 3
+        </li>
+        <span class="pb-3" style="font-size: 30px; color: #B41D1E;"> . </span>
+        <li class="px-1 list-text-4">
+          مستمر
+        </li>
+      </ul>
     </div>
   </section>
 
   <div class="container">
     <div class="row">
 
+      <section>
+        <div class="main-comment">
+          <div class="row">
+
+
+            <!-- <div style="margin-bottom: 10px;" class="col-md-12 col-sm-12">
+              <div class="comment" style=" border: 2px solid var(--red);">
+                <button type="button" data-bs-toggle="modal" href="#epis" role="button" class="btn">الحلقــــات</button>
+
+              </div>
+            </div> -->
+
+            <div class="col-md-12 col-sm-12" >
+              <div class="comment" style=" border: 2px solid var(--red);">
+                <button type="button" data-bs-toggle="modal" href="#comments" role="button"
+                  class="btn">التعليقات</button>
+
+              </div>
+            </div>
+
+
+            <div class="col-md-12 col-sm-12">
+              <div class="add">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <p>
+                      <i class="fa fa-star-o"></i>
+                      <br>
+                      أضف تقييمك
+                    </p>
+                  </div>
+                  <div class="col-md-6  col-sm-6">
+                    <i class="fa fa-star"></i>
+                    <br>
+                    9,34/10
+                    <br>
+                    (344 &nbsp;صوت)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12">
+              <div class="social">
+                <ul>
+                  <li>
+                    <i class="fa fa-video-camera"></i>
+                    <br>
+                    التريلر
+                  </li>
+
+                  <li>
+                    <i class="fa fa-share-alt"></i>
+                    <br>
+                    مشاركة
+                  </li>
+
+                  <li>
+                    <i class="fa fa-bars"></i>
+                    <br>
+                    قائمتى
+                  </li>
+
+                  <li>
+                    <i class="fa fa-heart"></i>
+                    <br>
+                    المفضلة
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <section class="story">
-        <h4>القصه</h4>
+        <h4>القصة</h4>
         <p>
           هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
           النص العربى، حيث يمكنك أن تولد مثل هذا
@@ -196,38 +331,445 @@
       </section>
 
       <section class="content">
-        <h4>تصنيف الحتوي</h4>
-        <ul>
-          <li>الفاظ نابيه
-            <span> [30]</span>
+        <h4>تصنيف الحتوى  </h4>
+        <ul class="p-0">
+          <li>الفاظ نابيه, 
+            <span>شديد [40]</span>
             <i class="fa fa-plus"></i>
           </li>
 
-          <li>عنف و دمويه شديد
-            <span>[40]</span>
+          <li>عنف و دمويه,  
+            <span>شديد [40]</span>
             <i class="fa fa-plus"></i>
           </li>
 
-          <li>مشاهد مخيفه او صادمه متوسطه
-            <span> [57]</span>
+          <li>مشاهد مخيفه او صادمه, 
+            <span>شديد [40]</span>
             <i class="fa fa-plus"></i>
           </li>
 
-          <li>مخدرات و كحول و تدخين
-            <span>[21]</span>
+          <li>مخدرات و كحول و تدخين, 
+            <span>شديد [40]</span>
             <i class="fa fa-plus"></i>
           </li>
         </ul>
       </section>
 
-      <section class="videos" id="popular" class="section-padding">
 
-        <div class="section-header">
-          <div class="row">
+      <!-- Start comments -->
+      <!-- Modal -->
+      <div class="modal fade" id="comments" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">التعليقات</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class=" comments modal-body">
+              <div class="h-100 pb-4">
+                <div class="comm-info">
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="users-comments">
+                    <div class="row">
+                      <div class="col-md-1 col-sm-1">
+                        <div class="img-user">
+                          <img src="./img/user_profile.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <div class="info">
+                          <h6>Alkhair Abdelmoneim</h6>
+                          <p class="comment">في مركز لانترين نقدم عدد من الكورسات </p>
+                        </div>
+                        <div class="active">
+                          <span><a href="http://">1 ع</a></span>
+                          <span>
+                            <span>
+                              <a href="http://" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                aria-expanded="false">أعجبنى</a>
+
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="" href="#">
+                                    <img src="./img/like-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a class="" href="#">
+                                    <img src="./img/heart-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/joy-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+
+                                <li><a class="" href="#">
+                                    <img src="./img/unlike-100.png" alt="" srcset="">
+                                  </a>
+                                </li>
+                              </ul>
+                            </span>
+                          </span>
+                          <span><a href="http://">رد</a></span>
+                          <span>
+                            <i class="fa fa-heart"></i>
+                            3
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button> -->
+
+              <div class="row" style="width: 100%;">
+                <div class="col-md-12">
+                  <div class="type-comment">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="أكتب تعليق...."
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class="btn btn-secondary">
+                        <i class="fa fa-send"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  End commets -->
+
+
+      <section class="videos" id="popular">
+
+        <div class="row">
+          <div class="col-md-6 padding">
             <div class="dropdown">
-              <!-- input has "readonly" attribute to prevent typing interaction -->
               <input type="text" placeholder="إختر الموسم" readonly />
-              <!-- options list -->
               <ul class="options">
                 <li class="option">الموسم 1</li>
                 <li class="option">الموسم 2</li>
@@ -237,184 +779,225 @@
             </div>
           </div>
 
+          <div class="col-md-6 nav-search padding">
+            <input class="form-control video-search bordred" type="search" placeholder="إبحث برقم الحلقه....">
+          </div>
         </div>
 
-        <div class="owl-carousel popular-slider owl-theme">
-          <div class="row">
-            <div class="col-md-4 col-sm-6 px-2">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
+        <br>
 
+        <div class="row">
+          <div class="card mb-3 col-sm-6" style="max-width: 540px;">
+
+            <div class="row g-0">
+              <div class="col-4 position-relative card-video">
+                <img src="./img/image_2.jpg" class="img-fluid rounded-start" alt="...">
+                <i class="fa fa-play-circle-o play-icon" aria-hidden="true"></i>
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    الحلقه &nbsp; 1
+                    <span>
+                      <a class="btn exclamation" data-bs-toggle="modal" href="#exampleModal" role="button">
+                        <i class="fa fa-exclamation-circle"></i>
+                      </a>
+                    </span>
+                  </h5>
+
+                  <a href="#" class="btn downloads">
+                    <i class="fa fa-download"></i>
+                    تحميل
+                  </a>
+
+                  <a class="btn comment" data-bs-toggle="modal" href="#comments" role="button">
+                    <i class="fa fa-commenting">&nbsp; التعليقات</i>
+                  </a>
+
+                  <a class="btn whatch-down" data-bs-toggle="modal" href="#whatch-down" role="button">
+                    <i class="fa fa-arrow-down arrow-down"></i>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 px-2">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
 
+          </div>
+        </div>
+
+        <!-- <div class="owl-carousel popular-slider owl-theme">
+
+          <div class="item movie-item">
+            <div class="row">
+              <div class="movie-poster-box p-0 col-4">
+                <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
+                  class="img-fluid">
+                <div class="play-btn">
+                  <i class="far fa-play-circle"></i>
                 </div>
               </div>
-            </div>
-            <div class="px-2 col-md-4 col-sm-6">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
-
+              <div class="movie-content p-3 desc col-7 text-white">
+                <h5>الحلقه &nbsp;<span>1</span></h5>
+                <div class="movie-info">
+                  <p class="movie-download"><i class="fa fa-download"></i></p>
+                  <p>
+                    <i class="fa fa-ellipsis-h"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 px-2 col-sm-6">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
 
+            </div>
+          </div>
+
+          <div class="item movie-item">
+            <div class="row">
+              <div class="movie-poster-box p-0 col-4">
+                <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
+                  class="img-fluid">
+                <div class="play-btn">
+                  <i class="far fa-play-circle"></i>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-6 px-2">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
-
+              <div class="movie-content p-3 desc col-7 text-white">
+                <h5>الحلقه &nbsp;<span>1</span></h5>
+                <div class="movie-info">
+                  <p class="movie-download"><i class="fa fa-download"></i></p>
+                  <p>
+                    <i class="fa fa-ellipsis-h"></i>
+                  </p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 px-2 col-sm-6">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
 
+            </div>
+          </div>
+
+          <div class="item movie-item">
+            <div class="row">
+              <div class="movie-poster-box p-0 col-4">
+                <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
+                  class="img-fluid">
+                <div class="play-btn">
+                  <i class="far fa-play-circle"></i>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 px-2 col-sm-6">
-              <div class="item movie-item">
-                <div class="row">
-                  <div class="movie-poster-box p-0 col-4">
-                    <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
-                      class="img-fluid">
-                    <div class="play-btn">
-                      <i class="far fa-play-circle"></i>
-                    </div>
-                  </div>
-                  <div class="movie-content p-3 desc col-7 text-white">
-                    <h5>الحلقه &nbsp;<span>1</span></h5>
-                    <div class="movie-info">
-                      <p class="movie-download"><i class="fa fa-download"></i></p>
-                      <p>
-                        <i class="fa fa-ellipsis-h"></i>
-                      </p>
-                    </div>
-                  </div>
+              <div class="movie-content p-3 desc col-7 text-white">
+                <h5>الحلقه &nbsp;<span>1</span></h5>
+                <div class="movie-info">
+                  <p class="movie-download"><i class="fa fa-download"></i></p>
+                  <p>
+                    <i class="fa fa-ellipsis-h"></i>
+                  </p>
+                </div>
+              </div>
 
+            </div>
+          </div>
+
+          <div class="item movie-item">
+            <div class="row">
+              <div class="movie-poster-box p-0 col-4">
+                <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
+                  class="img-fluid">
+                <div class="play-btn">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="movie-content p-3 desc col-7 text-white">
+                <h5>الحلقه &nbsp;<span>1</span></h5>
+                <div class="movie-info">
+                  <p class="movie-download"><i class="fa fa-download"></i></p>
+                  <p>
+                    <i class="fa fa-ellipsis-h"></i>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="item movie-item">
+            <div class="row">
+              <div class="movie-poster-box p-0 col-4">
+                <img src="https://i.pinimg.com/474x/e8/ed/3a/e8ed3a18eb5f35e05882fd4b2c531619.jpg" alt=""
+                  class="img-fluid">
+                <div class="play-btn">
+                  <i class="far fa-play-circle"></i>
+                </div>
+              </div>
+              <div class="movie-content p-3 desc col-7 text-white">
+                <h5>الحلقه &nbsp;<span>1</span></h5>
+                <div class="movie-info">
+                  <p class="movie-download"><i class="fa fa-download"></i></p>
+                  <p>
+                    <i class="fa fa-ellipsis-h"></i>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-
-        </div>
-
+        </div> -->
 
       </section>
 
-      <section class="characters">
+      <!-- <section class="characters">
         <h4>الشخصيات</h4>
         <br>
         <div class="slide-container swiper">
           <div class="slide-content" id="char-content">
             <div class="card-wrapper swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/images.jpg" alt="" class="card-img">
+                  </div>
+                  <a href="http://">David Dell</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/image_3.avif" alt="" class="card-img">
+                  </div>
+                  <a href="http://">David Dell</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/image_3.avif" alt="" class="card-img">
+                  </div>
+                  <a href="http://">David Dell</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/images.jpg" alt="" class="card-img">
+                  </div>
+                  <a href="http://">David Dell</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/pimages.jpg" alt="" class="card-img">
+                  </div>
+                  <a href="http://">David Dell</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image-content">
+                  <div class="card-image">
+                    <img src="./img/images.jpg" alt="" class="card-img">
+                  </div>
+                  <a href="http://">David Dell</a>
+                </div>
+              </div>
 
               <div class="swiper-slide">
                 <div class="image-content">
@@ -478,9 +1061,105 @@
           <div id="char-pagin" class="swiper-pagination"></div>
         </div>
 
-      </section>
+      </section> -->
 
-      <section class="comments">
+      <section class="characters">
+        <h4>الشخصيات</h4>
+        <!-- <br> -->
+        <div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="comments">
         <h4>التعليقات</h4>
 
         <div class="comm-info">
@@ -539,9 +1218,9 @@
           </div>
         </div>
 
-      </section>
+      </section> -->
 
-      <section class="slide">
+      <!-- <section class="slide">
         <h4>اخرى</h4>
         <br>
         <div class="slider slider-cat">
@@ -650,6 +1329,7 @@
                     </div>
                   </div>
                 </div>
+                
 
               </div>
             </div>
@@ -658,20 +1338,122 @@
             <div id="other-pagin" class="swiper-pagination"></div>
           </div>
         </div>
+      </section> -->
+
+      <section class="characters others">
+        <h4>أخرى</h4>
+        <!-- <br> -->
+        <div id="owl-others" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="./img/images.jpg" alt="">
+            </div>
+            <a href="http://">David Dell</a>
+          </div>
+        </div>
       </section>
+
+
+
     </div>
   </div>
 
 
-  <script src="./js/jQuery v3.6.0.js"></script>
+
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/subscription.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
-
+  
   <!-- slider js -->
   <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <!-- slider js -->
 
   <!-- Swiper JS -->
+  <script src="js/owl2.carousel.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <!-- Swiper JS -->
 
