@@ -116,45 +116,139 @@ body {
   padding: 0 7px;
 }
 
-.main-comment {
+/* ============== start main-comment ============== */
+
+.main-comment{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5%;
 
 }
 
 .main-comment .comment,
 .main-comment .add,
-.main-comment .social {
+.main-comment .social{
   width: 40%;
-  margin: auto;
-  border-radius: 10px;
-  color: var(--white);
+margin: auto;
+border-radius: 10px;
+color: var(--white);
 }
 
-.main-comment .comment .btn {
+.main-comment .comment .btn{
   width: 100%;
-  background-color: var(--bg-section);
-  border-radius: 10px;
-  color: var(--white);
+background-color: var(--bg-section);
+border: 2px solid var(--red);
+border-radius: 10px;
+color: var(--white);
 }
 
-.main-comment .comment .btn:focus {
+.main-comment .comment .btn:focus{
   box-shadow: none;
 }
 
 .main-comment .add,
-.main-comment .social {
+.main-comment .social{
   margin-top: 10px;
   background-color: var(--bg-section);
   padding: 10px;
 }
 
-.main-comment .social ul {
-  display: inline-flex;
+.main-comment .social ul{
+  display:inline-flex;
   padding: 0;
-  width: 100%;
-  justify-content: space-between;
+width: 100%;
+justify-content: space-between;
 }
+
+.main-comment .dropdown-menu {
+  position: relative;
+  display: block;
+  background: none;
+  padding: 0;
+  border: none;
+  min-width: 0rem;
+}
+
+.main-comment .star{
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu>button:hover {
+  background: none;
+}
+
+.dropdown-menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* padding: 0 16px;
+width: 230px;
+height: 64px; */
+  border-radius: 12px;
+  color: var(--white);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu>button {
+  position: relative;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.dropdown-menu button #dropdown-icon {
+  margin-left: auto;
+}
+
+.dropdown__menu-labels {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: 70px;
+  right: -70px;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 12px;
+  border-top: 0;
+  background: var(--white);
+  translate: 0 -20px;
+  transition: 0.4s;
+}
+
+.dropdown-star{
+  right: 0 !important;
+}
+
+.dropdown__menu-labels button {
+  border: 0;
+  width: 100%;
+  height: 56px;
+  border-radius: 0;
+  color: var(--bg-section);
+  padding: 0 10px;
+}
+
+.dropdown__menu-labels button:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.dropdown-menu.open .dropdown__menu-labels,
+.star.open-star .dropdown__menu-labels {
+  opacity: 1;
+  translate: 0;
+  visibility: visible;
+}
+
+.dropdown-menu.open .dropdown__menu-labels .icon-left,
+.star.open-star .dropdown__menu-labels .icon-left {
+  position: absolute;
+  left: 4px;
+}
+/* ============== end main-comment ============== */
 
 
 .comments,
@@ -253,6 +347,61 @@ body {
 
 .content ul i {
   float: left;
+}
+
+.accordion .accordion-button::before{
+  position: absolute;
+  content: "";
+  right: 0px;
+  background-color: var(--dark-yellow);
+  width: 10px;
+  height: 16px;
+} 
+
+.accordion .accordion-item .descrip{
+font-size: 12px;
+
+}
+
+.accordion .accordion-body .btn{
+font-size: 12px;
+width: 90%;
+margin: 4px 0;
+}
+
+.accordion .accordion-body .btn-danger{
+background: none;
+color: #dc3545;
+}
+
+.accordion .accordion-body .btn-success{
+background: none;
+color: #198754;
+}
+
+.accordion .accordion-body .head p{
+margin-bottom: 0;
+font-size: 14px;
+}
+
+.accordion .accordion-body .head .head-text{
+margin-right: 10px;
+}
+
+.accordion .accordion-body .head span{
+color: #ccc;
+font-size: 12px;
+}
+
+.accordion .accordion-body .head{
+border-right: 4px solid var(--red);
+}
+
+.accordion .accordion-body .body{
+border-top: 1px solid var(--white);
+margin-top: 10px;
+padding-top: 10px;
+font-size: 14px;
 }
 
 /* end content */

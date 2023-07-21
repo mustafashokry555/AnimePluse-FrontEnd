@@ -277,9 +277,9 @@ body.light {
     border-radius: 10px;
 }
 
-#popular .movie-item .movie-poster-box img {
+/* #popular .movie-item .movie-poster-box img {
     height: 200px;
-}
+} */
 
 
 
@@ -640,7 +640,7 @@ footer p i {
     }
 
     .movie-item .movie-poster-box img {
-        height: 450px;
+        height: 250px;
     }
 }
 
